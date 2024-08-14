@@ -1,0 +1,17 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Cloudflare Pages
+      run: |
+        echo "Deploying to Cloudflare Pages..."
+        # 在这里添加调用 Cloudflare Pages API 的命令
+
